@@ -1,0 +1,92 @@
+
+body{
+  background: rgb(195, 150, 200);
+  font-family: Share Tech Mono, monospace;
+}
+
+#app{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+#calculator{
+  min-height: 400px;
+  width: 350px;
+  background: rgb(39, 43, 44);
+  border: 5px solid rgb(65, 70, 71);
+  
+}
+
+#screen{
+  min-height: 50px;
+  max-width: 350px;
+  color: white;
+}
+
+#buttonsGrid{
+ display: grid;
+  grid-template-columns: 87.5px 87.5px 87.5px 87.5px;
+  grid-template-rows: 70px 70px 70px 70px 70px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 69px;
+}
+
+button{
+  font-family: Share Tech Mono, monospace;
+  color: white;
+  font-size: 1.2rem;
+  width: 87.5px;
+  height: 70px;
+  background: rgb(81, 84, 85);
+  border: 1px solid black;
+  outline: none;
+}
+
+#clear{
+  width: 175px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background: rgb(139, 62, 65);
+}
+
+#equals{
+  height: 140px;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background: rgb(38, 37, 104);
+  vertical-align: middle;
+  line-height: 140px;
+}
+
+#zero{
+  width: 175px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#add, #divide, #subtract, #multiply{
+  background: rgb(122, 122, 134);
+}
+
+button:hover{
+  color: black;
+  outline: .05em solid grey;
+  z-index: 3;
+}
+
+#curExpression{
+  color: rgb(160, 87, 45);
+  font-size: 1.2rem;
+  min-height: 35px;
+  word-break: break-all;
+}
+
+#display{
+  font-size: 1.4rem;
+}
+
